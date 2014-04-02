@@ -6,7 +6,7 @@ Build a data visualization app
 
 This tutorial will walk you through the process of building a simple
 news application and publishing it on the web. You will learn the basics
-of responsive design and charting with D3 by visualizing data by the
+of responsive design and charting data with D3 by visualizing data by the
 `@chitowncoders <http://twitter.com/chitowncoders/>`_ `Cook
 County Jail scraper <https://github.com/sc3/cookcountyjail/>`_.
 
@@ -61,7 +61,8 @@ simple, and runs on all major platforms.
 Command-line interface
 ----------------------
 
-Every computer should be a way to open a window that lets you type in commands. Different operating
+Every computer should have a way to open a window that lets you control really fundamental things about it. 
+We call it the command line, because you type text commands into it for your computer to obey.  Different operating
 systems give this tool slightly different names, but they all have some form of it, and there are
 alternative programs you can install as well. 
 
@@ -83,7 +84,7 @@ Git and GitHub
 you make to files over time. This is useful when you're working on your own, 
 but quickly becomes essential with large software projects, especially if you work with other developers. 
 
-`GitHub <https://github.com/>`_ is a website that hosts git code repositories, both public and private. It comes
+`GitHub <https://github.com/>`_ is a website that hosts git code repositories (your code's home), both public and private. It comes
 with many helpful tools for reviewing code and managing projects. It also has some 
 `extra tricks <http://pages.github.com/>`_ that make it easy to publish web pages, which we will use later. 
 
@@ -157,7 +158,7 @@ Start by creating a directory for your project.
     mkdir 26thycalifornia
     cd 26thycalifornia
 
-``mkdir`` creates a directory. ``cd`` changes the current working directory.
+``mkdir`` creates a directory. ``cd`` changes the current working directory - you navigate to whatever you typed after ``cd``.
 
 Now create a bunch of empty files and directories.
 
@@ -189,7 +190,7 @@ to make a note of the work you've done so far. Say hello to the Git version cont
     git init
 
 The ``git`` command is always followed by a *subcommand*, like `init`, which tells git what to do.
-The ``init`` subcommand creates a new repository in the current directory.
+The ``init`` subcommand creates and initializes a new repository in the current directory.
 
 Find out the state of your repository.
 
@@ -244,7 +245,7 @@ creates a new entry in the history with a message attached to it.
 
     git commit -m "creado 26th y california"
 
-The ``-m "Some message"`` flag specifies a message to associate with this set of changes.
+The ``-m "Some message"`` flag specifies a message to associate with this set of changes. (Any time you type a command with a "-" preceding it, you are adding a "flag" to it.)
 
 Did it work? The ``log`` subcommand provides the history of the current repository:
 
