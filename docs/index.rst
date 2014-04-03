@@ -14,9 +14,9 @@ You will get hands-on experience in every stage of the development process:
 working with data, sketching mockups, writing HTML, CSS, and Javascript
 and recording your work using Git's version control system. 
 
-You will learn to use Backbone JS to structure your application, Underscore JS
-to process data, Twitter Bootstrap to structure your markup, and D3 for 
-data visualization. The techniques used here were first described in
+The tools you'll use to accomplish these things are: Backbone JS (to structure your application), Underscore JS
+(to process data), Twitter Bootstrap (to structure your markup), and D3 (for 
+data visualization). The techniques used here were first described in
 `Responsive Charts with D3 and Backbone 
 <http://blog.apps.chicagotribune.com/2014/03/07/responsive-charts-with-d3-and-backbone/>`_
 by Ryan Nagle.
@@ -62,7 +62,7 @@ Command-line interface
 ----------------------
 
 Every computer should have a way to open a window that lets you control really fundamental things about it. 
-We call it the command line, because you type text commands into it for your computer to obey.  Different operating
+We call it the command line, because you type text lines into it that your computer obeys.  Different operating
 systems give this tool slightly different names, but they all have some form of it, and there are
 alternative programs you can install as well. 
 
@@ -80,8 +80,8 @@ Ubuntu Linux comes with a program of the `same name
 Git and GitHub
 --------------
 
-`Git <http://git-scm.com/>`_ is a version control program for saving the changes 
-you make to files over time. This is useful when you're working on your own, 
+`Git <http://git-scm.com/>`_ is a version control program for saving each change 
+you make to your files over time. This is useful when you're working on your own, 
 but quickly becomes essential with large software projects, especially if you work with other developers. 
 
 `GitHub <https://github.com/>`_ is a website that hosts git code repositories (your code's home), both public and private. It comes
@@ -158,7 +158,7 @@ Start by creating a directory for your project.
     mkdir 26thycalifornia
     cd 26thycalifornia
 
-``mkdir`` creates a directory. ``cd`` changes the current working directory - you navigate to whatever you typed after ``cd``.
+``mkdir`` creates (makes) a directory. ``cd`` changes the current working directory - you navigate into whatever you typed after ``cd``.
 
 Now create a bunch of empty files and directories.
 
@@ -239,7 +239,7 @@ Check the status of your repository again.
 
 
 Log your changes (in this case, adding all those empty files).  The ``commit`` subcommand 
-creates a new entry in the history with a message attached to it. 
+creates a new entry in your version history with a message attached to it. 
 
 .. code-block:: bash
 
@@ -271,7 +271,7 @@ Download some data
 You created a ``data`` directory but didn't ``touch`` any files inside it. Now you need to
 get a snapshot of the data from our API.
 
-The `curl` command can download files from the web. In this case we're sending the response to a 
+The `curl` command can download files from the web, and ``>`` tells the computer where to put the result of whatever is on its left. In this case we're sending the response from ``curl`` to a 
 file called ``data/daily_population.json``.
 
 .. code-block:: bash
@@ -355,7 +355,7 @@ Now commit your changes:
 
 .. note:: 
 
-    You may need to add or change sections of the file later. Your starting point will never be
+    You may need to add or change sections of the file later. That's ok. Your starting point will never be
     perfect, so don't worry about making it perfect. Just be clean and consistent.
     
 Each of the commented sections will need content based on our sketches. Let's do this! You'll work top
@@ -363,7 +363,7 @@ to bottom, showing only the section of the file you're working on.
 
 .. note::
 
-    You'll notice we're going all out and adding basic social media sharing tags and analytics.
+    You'll notice we're going all out and adding basic social media sharing tags and analytics. These things are important in any modern app.
 
 
 index.html: Title
@@ -455,14 +455,14 @@ You will also add "shims" in this section, which will make your site work better
 .. note:: 
 
     This project relies heavily on content delivery network (CDN) versions of popular libraries and
-    fonts. If your Internet access is spotty, you'll want to download these files to your computer
+    fonts. If your Internet access is spotty, you'll want to download these files to your computer instead
     and check them into your repository.
 
 
 index.html: Analytics
 ---------------------
 
-When you set up the skeleton, we made a terrible omission. Most real world pages should have some form
+When we set up the skeleton, we made a terrible omission. Most real world pages should have some form
 of analytics. That's easy enough to fix. Let's add Google analytics to the ``<head> ... </head>``. 
 
 .. code-block:: html
@@ -489,7 +489,7 @@ of analytics. That's easy enough to fix. Let's add Google analytics to the ``<he
 Interlude: Adding css/style.css
 -------------------------------
 
-You've finally made it to the ``<body>``. Before you go much further, dump our handy dandy starter
+You've finally made it to the ``<body>``. Before you go much further, put our handy dandy starter
 CSS template into the ``css/style.css`` file. Like the basic HTML page, this is a basic framework
 to start working from.
 
@@ -697,7 +697,7 @@ boxes to the content section.
 index.html: Add footer
 ----------------------
 
-We almost forgot that we need to attribute the poor photographer who took the guard tower shot. Add
+We almost forgot that we need to give credit to the poor photographer who took the guard tower shot. Add
 a footer with an attribution link.
 
 .. code-block:: html
@@ -740,7 +740,7 @@ Add libraries and application code in a single commit.
 js/app.js: Hello world
 ----------------------
 
-And last but not least, get the Javascript add running by editing ``js/app.js``:
+And last but not least, get the JavaScript app running by editing ``js/app.js``:
 
 .. code-block:: javascript
 
